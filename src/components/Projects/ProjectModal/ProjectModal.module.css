@@ -1,0 +1,66 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: var(--z-modal);
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  background: rgba(1, 3, 10, 0.72);
+  backdrop-filter: blur(14px);
+}
+
+.modal {
+  position: relative;
+  width: min(760px, 100%);
+  max-height: min(720px, 92vh);
+  overflow: auto;
+  padding: clamp(24px, 4vw, 42px);
+  border: 1px solid rgba(154, 233, 255, 0.22);
+  border-radius: var(--radius-lg);
+  background: rgba(6, 10, 24, 0.95);
+  box-shadow: var(--shadow-panel);
+}
+
+.close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  display: grid;
+  width: 42px;
+  height: 42px;
+  place-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 8px;
+  color: var(--text-strong);
+  background: rgba(255, 255, 255, 0.07);
+  cursor: pointer;
+}
+
+.modal > span {
+  color: var(--accent-lime);
+  font-size: 0.82rem;
+  font-weight: 900;
+}
+
+.modal h3 {
+  margin: 10px 52px 12px 0;
+  color: var(--text-strong);
+  font-size: clamp(1.7rem, 4vw, 3rem);
+}
+
+.modal p,
+.modal li {
+  color: var(--text-soft);
+  line-height: 1.75;
+}
+
+.mediaSlot {
+  display: grid;
+  min-height: 220px;
+  margin-top: 22px;
+  place-items: center;
+  border: 1px dashed rgba(154, 233, 255, 0.24);
+  border-radius: var(--radius-md);
+  color: var(--text-muted);
+  background: rgba(255, 255, 255, 0.04);
+}

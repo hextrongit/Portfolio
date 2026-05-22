@@ -1,0 +1,56 @@
+.placeholder {
+  display: grid;
+  min-height: 230px;
+  align-content: start;
+  padding: 18px;
+  border-bottom: 1px solid rgba(154, 233, 255, 0.12);
+  background:
+    radial-gradient(circle at 20% 25%, rgba(74, 225, 255, 0.2), transparent 34%),
+    radial-gradient(circle at 78% 70%, rgba(255, 87, 219, 0.14), transparent 28%),
+    rgba(255, 255, 255, 0.035);
+}
+
+.window {
+  display: flex;
+  gap: 7px;
+  padding: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 8px;
+  background: rgba(2, 6, 16, 0.48);
+}
+
+.window span {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--accent-cyan);
+}
+
+.window span:nth-child(2) {
+  background: var(--accent-lime);
+}
+
+.window span:nth-child(3) {
+  background: var(--accent-pink);
+}
+
+.lines {
+  display: grid;
+  gap: 13px;
+  margin-top: 42px;
+}
+
+.lines i {
+  display: block;
+  height: 12px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.2), transparent);
+}
+
+.lines i:nth-child(2) {
+  width: 74%;
+}
+
+.lines i:nth-child(3) {
+  width: 48%;
+}

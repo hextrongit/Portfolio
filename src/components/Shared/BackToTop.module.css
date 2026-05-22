@@ -1,0 +1,29 @@
+.button {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: var(--z-floating);
+  display: grid;
+  width: 46px;
+  height: 46px;
+  place-items: center;
+  border: 1px solid rgba(154, 233, 255, 0.24);
+  border-radius: 8px;
+  color: var(--text-strong);
+  background: rgba(6, 10, 24, 0.72);
+  box-shadow: var(--shadow-panel);
+  backdrop-filter: blur(18px);
+  cursor: pointer;
+}
+
+.button:focus-visible {
+  outline: 3px solid rgba(183, 255, 92, 0.7);
+  outline-offset: 4px;
+}
+
+@media (max-width: 767px) {
+  .button {
+    right: 16px;
+    bottom: 16px;
+  }
+}

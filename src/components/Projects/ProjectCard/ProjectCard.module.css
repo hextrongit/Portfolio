@@ -1,0 +1,84 @@
+.card {
+  display: grid;
+  min-height: 100%;
+}
+
+.body {
+  display: grid;
+  gap: 14px;
+  padding: 22px;
+}
+
+.category {
+  width: fit-content;
+  padding: 6px 10px;
+  border: 1px solid rgba(185, 255, 97, 0.24);
+  border-radius: 999px;
+  color: var(--accent-lime);
+  background: rgba(185, 255, 97, 0.065);
+  font-size: 0.78rem;
+  font-weight: 900;
+}
+
+.body h3 {
+  margin: 0;
+  color: var(--text-strong);
+  font-size: clamp(1.3rem, 2.5vw, 2rem);
+}
+
+.body p {
+  margin: 0;
+  color: var(--text-soft);
+  line-height: 1.72;
+}
+
+.stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.stack span {
+  padding: 7px 9px;
+  border: 1px solid rgba(154, 233, 255, 0.12);
+  border-radius: 999px;
+  color: var(--text-muted);
+  background: rgba(255, 255, 255, 0.045);
+  font-size: 0.8rem;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.actions a,
+.actions button,
+.actions > span {
+  display: grid;
+  width: 40px;
+  height: 40px;
+  place-items: center;
+  border: 1px solid rgba(154, 233, 255, 0.16);
+  border-radius: 8px;
+  color: var(--text-soft);
+  background: rgba(255, 255, 255, 0.055);
+  cursor: pointer;
+  transition:
+    color 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.actions a:hover,
+.actions button:hover {
+  color: var(--accent-cyan);
+  border-color: rgba(74, 225, 255, 0.5);
+  transform: translateY(-2px);
+}
+
+.disabled {
+  opacity: 0.42;
+  cursor: not-allowed;
+}

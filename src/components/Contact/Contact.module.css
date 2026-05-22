@@ -1,0 +1,146 @@
+.layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(300px, 0.72fr);
+  gap: 20px;
+  align-items: stretch;
+}
+
+.copy {
+  display: grid;
+  align-content: center;
+  padding: clamp(24px, 5vw, 50px);
+}
+
+.kicker {
+  width: fit-content;
+  padding: 8px 11px;
+  border: 1px solid rgba(185, 255, 97, 0.22);
+  border-radius: 999px;
+  color: var(--accent-lime);
+  background: rgba(185, 255, 97, 0.065);
+  font-size: 0.8rem;
+  font-weight: 900;
+}
+
+.copy h3 {
+  margin: 20px 0 14px;
+  color: var(--text-strong);
+  font-size: clamp(2rem, 5vw, 4.8rem);
+  line-height: 1;
+}
+
+.copy p {
+  max-width: 650px;
+  margin: 0;
+  color: var(--text-soft);
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 30px 0 22px;
+}
+
+.actions a {
+  gap: 10px;
+}
+
+.contactLines {
+  display: grid;
+  gap: 10px;
+  margin-bottom: 22px;
+  color: var(--text-muted);
+}
+
+.contactLines span {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  word-break: break-word;
+}
+
+.contactLines svg {
+  color: var(--accent-cyan);
+}
+
+.imagePanel {
+  position: relative;
+  min-height: 620px;
+  overflow: hidden;
+  border: 1px solid rgba(154, 233, 255, 0.18);
+  border-radius: var(--radius-lg);
+  background: rgba(255, 255, 255, 0.04);
+  box-shadow: var(--shadow-panel);
+}
+
+.imagePanel > span:first-child {
+  width: 100%;
+  height: 100%;
+}
+
+.image {
+  filter: saturate(1.04) contrast(1.02);
+}
+
+.imagePanel::after {
+  position: absolute;
+  inset: 0;
+  content: '';
+  background:
+    linear-gradient(180deg, transparent 35%, rgba(4, 8, 20, 0.86)),
+    radial-gradient(circle at 72% 22%, rgba(74, 225, 255, 0.17), transparent 32%);
+  pointer-events: none;
+}
+
+.formPlaceholder {
+  position: absolute;
+  left: 18px;
+  right: 18px;
+  bottom: 18px;
+  z-index: 2;
+  padding: 18px;
+  border: 1px dashed rgba(154, 233, 255, 0.24);
+  border-radius: var(--radius-md);
+  color: var(--text-muted);
+  background: rgba(4, 8, 20, 0.66);
+  backdrop-filter: blur(14px);
+}
+
+.formPlaceholder span {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--text-strong);
+  font-weight: 900;
+}
+
+.formPlaceholder p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 960px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+
+  .imagePanel {
+    min-height: 520px;
+  }
+}
+
+@media (max-width: 600px) {
+  .actions {
+    display: grid;
+  }
+
+  .actions a {
+    width: 100%;
+  }
+
+  .imagePanel {
+    min-height: 480px;
+  }
+}

@@ -1,0 +1,51 @@
+.grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(280px, 0.95fr);
+  gap: 18px;
+}
+
+.copy {
+  padding: clamp(24px, 4vw, 42px);
+}
+
+.copy p {
+  margin: 0;
+  color: var(--text-soft);
+  font-size: clamp(1rem, 1.45vw, 1.16rem);
+  line-height: 1.9;
+}
+
+.copy p + p {
+  margin-top: 18px;
+}
+
+.focusGrid {
+  display: grid;
+  gap: 14px;
+}
+
+.focusCard {
+  padding: 24px;
+}
+
+.focusCard svg {
+  color: var(--accent-lime);
+}
+
+.focusCard h3 {
+  margin: 16px 0 10px;
+  color: var(--text-strong);
+  font-size: 1.16rem;
+}
+
+.focusCard p {
+  margin: 0;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,98 @@
+.background {
+  position: fixed;
+  inset: 0;
+  z-index: var(--z-background);
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 16% 16%, rgba(52, 223, 255, 0.16), transparent 32%),
+    radial-gradient(circle at 82% 10%, rgba(255, 88, 214, 0.12), transparent 30%),
+    radial-gradient(circle at 74% 84%, rgba(195, 255, 87, 0.08), transparent 32%),
+    linear-gradient(135deg, #040713 0%, #0a1022 42%, #060817 100%);
+}
+
+.grid {
+  position: absolute;
+  inset: -40px;
+  opacity: 0.22;
+  background-image:
+    linear-gradient(rgba(154, 233, 255, 0.12) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(154, 233, 255, 0.12) 1px, transparent 1px);
+  background-size: 54px 54px;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), transparent 82%);
+  transform: perspective(700px) rotateX(64deg) translateY(-130px);
+}
+
+.light {
+  position: absolute;
+  width: min(42vw, 560px);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  filter: blur(70px);
+  opacity: 0.32;
+  will-change: transform;
+}
+
+.cyan {
+  top: 4%;
+  left: 4%;
+  background: #38dbff;
+}
+
+.pink {
+  right: 0;
+  top: 20%;
+  background: #ff56d8;
+}
+
+.lime {
+  right: 18%;
+  bottom: 0;
+  width: min(34vw, 420px);
+  background: #b9ff61;
+}
+
+.particles span {
+  position: absolute;
+  display: block;
+  border-radius: 50%;
+  background: rgba(218, 249, 255, 0.74);
+  box-shadow: 0 0 16px rgba(79, 225, 255, 0.8);
+  animation: drift 11s ease-in-out infinite;
+}
+
+.scan {
+  position: absolute;
+  inset: 0;
+  opacity: 0.08;
+  background: repeating-linear-gradient(0deg, transparent 0 7px, rgba(255, 255, 255, 0.12) 8px);
+  pointer-events: none;
+}
+
+@keyframes drift {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  50% {
+    transform: translate3d(18px, -28px, 0);
+  }
+}
+
+@media (max-width: 767px) {
+  .particles span:nth-child(n + 15),
+  .pink {
+    display: none;
+  }
+
+  .light {
+    filter: blur(54px);
+    opacity: 0.22;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .particles span {
+    animation: none;
+  }
+}

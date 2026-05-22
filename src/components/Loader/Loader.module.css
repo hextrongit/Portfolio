@@ -1,0 +1,36 @@
+.loader {
+  position: fixed;
+  inset: 0;
+  z-index: var(--z-floating);
+  display: grid;
+  place-items: center;
+  background: var(--bg);
+}
+
+.compact {
+  position: relative;
+  min-height: 36vh;
+}
+
+.ring {
+  width: 54px;
+  height: 54px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-top-color: var(--accent-cyan);
+  border-radius: 50%;
+  animation: spin 0.9s linear infinite;
+}
+
+.text {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

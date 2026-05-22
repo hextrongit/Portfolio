@@ -1,0 +1,40 @@
+.compactSection {
+  min-height: auto;
+  padding-top: clamp(58px, 6vw, 92px);
+  padding-bottom: clamp(42px, 5vw, 68px);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 18px;
+}
+
+.card {
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+  padding: clamp(24px, 4vw, 38px);
+}
+
+.card svg {
+  flex: 0 0 auto;
+  color: var(--accent-lime);
+}
+
+.card span {
+  color: var(--accent-cyan);
+  font-weight: 850;
+}
+
+.card h3 {
+  margin: 10px 0;
+  color: var(--text-strong);
+  font-size: clamp(1.45rem, 3vw, 2.35rem);
+}
+
+.card p {
+  margin: 0;
+  color: var(--text-soft);
+  line-height: 1.7;
+}

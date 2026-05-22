@@ -1,0 +1,29 @@
+.skeleton {
+  display: grid;
+  min-height: 390px;
+  gap: 14px;
+  padding: 18px;
+  border: 1px solid rgba(154, 233, 255, 0.14);
+  border-radius: var(--radius-lg);
+  background: rgba(255, 255, 255, 0.045);
+}
+
+.skeleton span,
+.skeleton i {
+  display: block;
+  overflow: hidden;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.065);
+}
+
+.skeleton span {
+  min-height: 220px;
+}
+
+.skeleton i {
+  height: 18px;
+}
+
+.skeleton i:last-child {
+  width: 58%;
+}
