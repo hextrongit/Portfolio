@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Sitemap: https://portfolio-cyan-theta-90.vercel.app/sitemap.xml
+Host: portfolio-cyan-theta-90.vercel.app
+
+# This site is deployed to Vercel at https://portfolio-cyan-theta-90.vercel.app
