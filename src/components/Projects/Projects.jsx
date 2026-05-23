@@ -13,8 +13,8 @@ function Projects() {
     <SectionShell
       id="projects"
       eyebrow="Projects"
-      title="Selected builds with room for screenshots, demos, source links, and future filtering."
-      intro="Project content is populated only from the resume. Empty media and links are intentionally prepared as placeholders."
+      title="Selected projects showcasing real-world applications, scalable systems, and product experiences."
+      intro="A collection of projects featuring modern web technologies, business solutions, and full stack development experience."
     >
       <div className={styles.frame}>
         <ProjectCarousel projects={featured} onSelectProject={setSelectedProject} />

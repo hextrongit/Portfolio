@@ -44,7 +44,7 @@ function Contact() {
         <div className={styles.imagePanel}>
           <LazyImage src={portfolioData.images.connect} alt={`${portfolioData.name} standing portrait`} imageClassName={styles.image} />
           <div className={styles.formPlaceholder}>
-            <span>Lets connect to build something great</span>
+            <span>Lets connect to build something great.</span>
             <p>{portfolioData.placeholders.contactForm}</p>
           </div>
         </div>

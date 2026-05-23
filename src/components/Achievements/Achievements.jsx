@@ -11,8 +11,8 @@ function Achievements() {
     <SectionShell
       id="achievements"
       eyebrow="Impact"
-      title="Measured wins from product delivery, performance work, and team code quality."
-      intro="These points come from resume-backed responsibilities and outcomes."
+      title="Delivering measurable impact through product development, performance optimization, and quality engineering."
+      intro="Highlights of contributions across product delivery, system performance, code quality, and team collaboration."
       className={styles.compactSection}
     >
       <div className={styles.grid}>

@@ -14,8 +14,8 @@ function Skills() {
     <SectionShell
       id="skills"
       eyebrow="Stack"
-      title="A practical toolkit for polished interfaces and resilient full stack systems."
-      intro="Grouped from the resume into interactive categories so the portfolio can grow without changing component code."
+      title="A practical toolkit for building modern interfaces and scalable full stack solutions."
+      intro="Technologies and tools used across frontend, backend, databases, and modern development workflows."
       className={styles.compactSection}
     >
       <div className={styles.layout}>
@@ -45,7 +45,7 @@ function Skills() {
             >
               <span>{skill}</span>
               <div aria-hidden="true">
-                <i style={{ width: `${72 + ((index * 7) % 23)}%` }} />
+                <i style={{ width: `${94 + ((index * 7) % 6)}%` }} />
               </div>
             </motion.div>
           ))}

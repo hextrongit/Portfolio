@@ -1,4 +1,4 @@
-import { ExternalLink, Github, ImagePlus, Maximize2 } from 'lucide-react';
+import { ExternalLink, Github, Maximize2 } from 'lucide-react';
 import { motion } from 'framer-motion';
 import GlassPanel from '../../Shared/GlassPanel.jsx';
 import ProjectPlaceholder from '../ProjectPlaceholder/ProjectPlaceholder.jsx';
@@ -32,7 +32,7 @@ function ProjectCard({ project, onPreview }) {
             target="_blank"
             rel="noreferrer"
             aria-label={`GitHub for ${project.title}`}
-            title={project.github ? 'GitHub' : 'TODO: Add GitHub URL'}
+            title={project.github ? 'GitHub' : 'GitHub URL not available at the moment. Will update shortly.'}
             onClick={(event) => {
               if (!project.github) event.preventDefault();
             }}
@@ -45,16 +45,13 @@ function ProjectCard({ project, onPreview }) {
             target="_blank"
             rel="noreferrer"
             aria-label={`Demo for ${project.title}`}
-            title={project.demo ? 'Demo' : 'TODO: Add demo URL'}
+            title={project.demo ? 'Demo' : 'Demo URL not available at the moment. Will update shortly.'}
             onClick={(event) => {
               if (!project.demo) event.preventDefault();
             }}
           >
             <ExternalLink size={17} aria-hidden="true" />
           </a>
-          <span title="TODO: Add project screenshots">
-            <ImagePlus size={17} aria-hidden="true" />
-          </span>
         </div>
       </div>
     </GlassPanel>

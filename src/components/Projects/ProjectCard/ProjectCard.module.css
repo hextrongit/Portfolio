@@ -45,6 +45,7 @@
   color: var(--text-muted);
   background: rgba(255, 255, 255, 0.045);
   font-size: 0.8rem;
+  height: 31px;
 }
 
 .actions {

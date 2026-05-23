@@ -17,7 +17,7 @@ function Navbar({ sections, activeSection }) {
     <header className={styles.header}>
       <nav className={styles.nav} aria-label="Primary navigation">
         <button className={styles.brand} type="button" onClick={() => handleNavigate('home')} aria-label="Go to home">
-          <span>AA</span>
+          <img src="/aswin_anilkumar.jpg" alt="Aswin Anilkumar" className={styles.avatar} />
           <strong>{portfolioData.name}</strong>
         </button>
 

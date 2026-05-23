@@ -9,7 +9,8 @@ function Certifications() {
     <SectionShell
       id="certifications"
       eyebrow="Certifications"
-      title="Verified training listed in the resume, with credential slots ready for future links."
+      title="Continuous learning through industry-focused technical training."
+      intro="MERN Stack certification focused on modern web development using MongoDB, Express.js, React, and Node.js."
       className={styles.compactSection}
     >
       <div className={styles.grid}>
@@ -29,7 +30,7 @@ function Certifications() {
               onClick={(event) => {
                 if (!certification.credentialUrl) event.preventDefault();
               }}
-              title={certification.credentialUrl ? 'Open credential' : 'TODO: Add credential URL'}
+              title={certification.credentialUrl ? 'Open credential' : 'Certification URL not available at the moment. Will update shortly.'}
               aria-label={`Credential for ${certification.name}`}
             >
               <ExternalLink size={18} aria-hidden="true" />
