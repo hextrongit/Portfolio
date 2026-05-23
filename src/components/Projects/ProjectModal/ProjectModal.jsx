@@ -1,5 +1,6 @@
 import { X } from 'lucide-react';
 import { AnimatePresence, motion } from 'framer-motion';
+import ImageCarousel from '../ImageCarousel/ImageCarousel.jsx';
 import styles from './ProjectModal.module.css';
 
 function ProjectModal({ project, onClose }) {
@@ -32,7 +33,9 @@ function ProjectModal({ project, onClose }) {
                 <li key={highlight}>{highlight}</li>
               ))}
             </ul>
-            <div className={styles.mediaSlot}>Project screenshots reserved</div>
+            {project.images && project.images.length > 0 && (
+              <ImageCarousel images={project.images} title={project.title} autoAdvance={false} />
+            )}
           </motion.div>
         </motion.div>
       )}

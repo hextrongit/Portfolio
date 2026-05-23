@@ -1,5 +1,32 @@
 import heroImage from '../assets/images/profile-hero.png';
 import connectImage from '../assets/images/profile-connect.png';
+import erp_image_1 from '../assets/erp_samples/ERP_image_1.png';
+import erp_image_2 from '../assets/erp_samples/ERP_image_2.png';
+import erp_image_3 from '../assets/erp_samples/ERP_image_3.png';
+import erp_image_4 from '../assets/erp_samples/ERP_image_4.png';
+import erp_image_5 from '../assets/erp_samples/ERP_image_5.png';
+import erp_image_6 from '../assets/erp_samples/ERP_image_6.png';
+import crm_image_1 from '../assets/crm_samples/CRM_image_1.png';
+import crm_image_2 from '../assets/crm_samples/CRM_image_2.png';
+import crm_image_3 from '../assets/crm_samples/CRM_image_3.png';
+import crm_image_4 from '../assets/crm_samples/CRM_image_4.png';
+import crm_image_5 from '../assets/crm_samples/CRM_image_5.png';
+import crm_image_6 from '../assets/crm_samples/CRM_image_6.png';
+import medico_plus_image_1 from '../assets/medicoplus_samples/MEDICOPLUS_image_1.jpeg';
+import medico_plus_image_2 from '../assets/medicoplus_samples/MEDICOPLUS_image_2.jpeg';
+import medico_plus_image_3 from '../assets/medicoplus_samples/MEDICOPLUS_image_3.jpeg';
+import medico_plus_image_4 from '../assets/medicoplus_samples/MEDICOPLUS_image_4.jpeg';
+import medico_plus_image_5 from '../assets/medicoplus_samples/MEDICOPLUS_image_5.jpeg';
+import movie_mate_image_1 from '../assets/movie_mate_samples/MOVIE_MATE_image_1.png';
+import movie_mate_image_2 from '../assets/movie_mate_samples/MOVIE_MATE_image_2.png';
+import movie_mate_image_3 from '../assets/movie_mate_samples/MOVIE_MATE_image_3.png';
+import movie_mate_image_4 from '../assets/movie_mate_samples/MOVIE_MATE_image_4.png';
+import movie_mate_image_5 from '../assets/movie_mate_samples/MOVIE_MATE_image_5.png';
+import chat_app_image_1 from '../assets/chat_app_samples/CHAT_APP_image_1.png';
+import chat_app_image_2 from '../assets/chat_app_samples/CHAT_APP_image_2.png';
+import chat_app_image_3 from '../assets/chat_app_samples/CHAT_APP_image_3.png';
+import chat_app_image_4 from '../assets/chat_app_samples/CHAT_APP_image_4.png';
+import hrm_image_1 from '../assets/hrm_samples/HRM_image_1.png';
 
 export const portfolioData = {
   name: 'Aswin Anilkumar',
@@ -94,7 +121,7 @@ export const portfolioData = {
         'Inertia.js',
         'REST APIs'
       ],
-      images: [],
+      images: [crm_image_1, crm_image_2, crm_image_3, crm_image_4, crm_image_5, crm_image_6],
       github: '',
       demo: '',
       featured: true,
@@ -117,7 +144,7 @@ export const portfolioData = {
         'Laravel',
         'REST APIs'
       ],
-      images: [],
+      images: [erp_image_1, erp_image_2, erp_image_3, erp_image_4, erp_image_5, erp_image_6],
       github: '',
       demo: '',
       featured: true,
@@ -125,6 +152,55 @@ export const portfolioData = {
         'Built modular UI architecture supporting reusable workflows across operational modules.',
         'Integrated APIs and business processes while maintaining scalable frontend architecture.',
         'Collaborated on frontend architecture decisions and shared component standards.',
+      ],
+    },
+    {
+      id: 'medicoplus-hms',
+      title: 'Medicoplus Hospital Management System',
+      description:
+        'Production-grade healthcare platform supporting consultation workflows, patient records, billing, and operational modules.',
+      category: 'Healthcare',
+      techStack: [
+        'React.js',
+        '.NET (C#)',
+        'REST APIs',
+        'Redux'
+      ],
+      images: [medico_plus_image_1, medico_plus_image_2, medico_plus_image_3, medico_plus_image_4, medico_plus_image_5],
+      github: '',
+      demo: '',
+      featured: true,
+      highlights: [
+        'Designed and enhanced the Consultation module for patient scheduling and workflow management.',
+        'Integrated APIs for billing, insurance, and patient record workflows.',
+        'Optimized rendering logic and state management to improve responsiveness.',
+      ],
+    },
+    {
+      id: 'movie-mate',
+      title: 'Movie Mate - Ticket Booking Platform for Ceniplex',
+      description: 'Ticket booking platform with user and admin modules, secure Stripe payment integration, and webhook-based validation.',
+      category: 'Full Stack',
+      techStack: ['React', 'Node.js', 'Express', 'MongoDB', 'Stripe', 'Redux'],
+      images: [movie_mate_image_1, movie_mate_image_2, movie_mate_image_3, movie_mate_image_4, movie_mate_image_5],
+      github: '',
+      demo: '',
+      featured: true,
+      highlights: ['Implemented Redux-based cart management with lazy loading optimization.'],
+    },
+    {
+      id: 'real-time-chat',
+      title: 'Real-Time Chat Application',
+      description: 'Full-stack real-time chat supporting concurrent users with low-latency delivery via WebSocket communication.',
+      category: 'Full Stack',
+      techStack: ['React (Vite)', 'Node.js', 'Express', 'Socket.io', 'JWT', 'MongoDB'],
+      images: [chat_app_image_1, chat_app_image_2, chat_app_image_3, chat_app_image_4],
+      github: 'https://github.com/hextrongit/Chat-App-Frontend',
+      demo: '',
+      featured: true,
+      highlights: [
+        'Implemented JWT authentication with RBAC and bcrypt password hashing for enterprise-grade security.',
+        'Optimized state management and socket lifecycle handling, reducing memory leaks and unnecessary re-renders.',
       ],
     },
     {
@@ -140,7 +216,7 @@ export const portfolioData = {
         'REST APIs',
         'Laravel'
       ],
-      images: [],
+      images: [hrm_image_1],
       github: '',
       demo: '',
       featured: true,
@@ -149,56 +225,7 @@ export const portfolioData = {
         'Implemented role-based interfaces and optimized state handling for business processes.',
         'Maintained consistent component architecture across modules.',
       ],
-    },
-    {
-      id: 'medicoplus-hms',
-      title: 'Medicoplus Hospital Management System',
-      description:
-        'Production-grade healthcare platform supporting consultation workflows, patient records, billing, and operational modules.',
-      category: 'Healthcare',
-      techStack: [
-        'React.js',
-        '.NET (C#)',
-        'REST APIs',
-        'Redux'
-      ],
-      images: [],
-      github: '',
-      demo: '',
-      featured: true,
-      highlights: [
-        'Designed and enhanced the Consultation module for patient scheduling and workflow management.',
-        'Integrated APIs for billing, insurance, and patient record workflows.',
-        'Optimized rendering logic and state management to improve responsiveness.',
-      ],
-    },
-    {
-      id: 'real-time-chat',
-      title: 'Real-Time Chat Application',
-      description: 'Full-stack real-time chat supporting concurrent users with low-latency delivery via WebSocket communication.',
-      category: 'Full Stack',
-      techStack: ['React (Vite)', 'Node.js', 'Express', 'Socket.io', 'JWT', 'MongoDB'],
-      images: [],
-      github: 'https://github.com/hextrongit/Chat-App-Frontend',
-      demo: '',
-      featured: true,
-      highlights: [
-        'Implemented JWT authentication with RBAC and bcrypt password hashing for enterprise-grade security.',
-        'Optimized state management and socket lifecycle handling, reducing memory leaks and unnecessary re-renders.',
-      ],
-    },
-    {
-      id: 'movie-mate',
-      title: 'Movie Mate - Ticket Booking Platform',
-      description: 'Ticket booking platform with user and admin modules, secure Stripe payment integration, and webhook-based validation.',
-      category: 'Full Stack',
-      techStack: ['React', 'Node.js', 'Express', 'MongoDB', 'Stripe', 'Redux'],
-      images: [],
-      github: '',
-      demo: '',
-      featured: true,
-      highlights: ['Implemented Redux-based cart management with lazy loading optimization.'],
-    },
+    }
   ],
   achievements: [
     'Reduced duplicate component logic by introducing reusable component patterns across CRM, ERP, and HRM platforms.',

@@ -12,7 +12,7 @@ function ProjectCard({ project, onPreview }) {
       whileHover={{ y: -8 }}
       transition={{ type: 'spring', stiffness: 260, damping: 24 }}
     >
-      <ProjectPlaceholder title={project.title} />
+      <ProjectPlaceholder title={project.title} images={project.images} />
       <div className={styles.body}>
         <span className={styles.category}>{project.category}</span>
         <h3>{project.title}</h3>
