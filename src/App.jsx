@@ -2,6 +2,7 @@ import { lazy, Suspense, useEffect } from 'react';
 import { motion, useReducedMotion } from 'framer-motion';
 import BackgroundEffects from './components/BackgroundEffects/BackgroundEffects.jsx';
 import CursorFollower from './components/CursorFollower/CursorFollower.jsx';
+import ErrorBoundary from './components/Shared/ErrorBoundary.jsx';
 import Loader from './components/Loader/Loader.jsx';
 import Navbar from './components/Navbar/Navbar.jsx';
 import SectionIndicator from './components/SectionIndicator/SectionIndicator.jsx';
@@ -41,22 +42,24 @@ function App() {
       <a className="skip-link" href="#home">
         Skip to content
       </a>
-      <BackgroundEffects activeSection={activeSection} />
-      <ScrollProgress />
-      <Navbar sections={sections} activeSection={activeSection} />
-      <SectionIndicator sections={sections} activeSection={activeSection} />
-      <motion.main
-        className="app-shell"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.7, ease: 'easeOut' }}
-      >
-        <Suspense fallback={<Loader />}>
-          <HomePage />
-        </Suspense>
-      </motion.main>
-      <BackToTop />
-      <CursorFollower />
+      <ErrorBoundary>
+        <BackgroundEffects activeSection={activeSection} />
+        <ScrollProgress />
+        <Navbar sections={sections} activeSection={activeSection} />
+        <SectionIndicator sections={sections} activeSection={activeSection} />
+        <motion.main
+          className="app-shell"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.7, ease: 'easeOut' }}
+        >
+          <Suspense fallback={<Loader />}>
+            <HomePage />
+          </Suspense>
+        </motion.main>
+        <BackToTop />
+        <CursorFollower />
+      </ErrorBoundary>
     </>
   );
 }

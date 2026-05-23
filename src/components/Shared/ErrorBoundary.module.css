@@ -1,0 +1,101 @@
+.errorContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+  padding: 2rem;
+}
+
+.errorContent {
+  max-width: 500px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  padding: 3rem 2rem;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+}
+
+.errorTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ff6b6b;
+  margin-bottom: 1rem;
+  font-family: 'Inter', sans-serif;
+}
+
+.errorMessage {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 2rem;
+  line-height: 1.6;
+  font-family: 'Inter', sans-serif;
+}
+
+.errorDetails {
+  margin: 1.5rem 0;
+  text-align: left;
+}
+
+.errorDetails summary {
+  cursor: pointer;
+  color: #64b5f6;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  transition: color 0.2s ease;
+}
+
+.errorDetails summary:hover {
+  color: #90caf9;
+}
+
+.errorStack {
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  overflow-x: auto;
+  color: #ff6b6b;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  font-family: 'Courier New', monospace;
+  margin-top: 0.5rem;
+}
+
+.resetButton {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Inter', sans-serif;
+}
+
+.resetButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(102, 126, 234, 0.4);
+}
+
+.resetButton:active {
+  transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+  .errorContent {
+    padding: 2rem 1.5rem;
+  }
+
+  .errorTitle {
+    font-size: 1.5rem;
+  }
+
+  .errorMessage {
+    font-size: 1rem;
+  }
+}
