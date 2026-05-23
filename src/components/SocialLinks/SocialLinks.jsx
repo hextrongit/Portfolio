@@ -29,7 +29,7 @@ function SocialLinks({ compact = false }) {
             target={href?.startsWith('http') ? '_blank' : undefined}
             rel={href?.startsWith('http') ? 'noreferrer' : undefined}
             aria-label={isAvailable ? label : `${label} pending`}
-            title={isAvailable ? label : portfolioData.placeholders[type] || 'TODO: Add link.'}
+            title={isAvailable ? label : portfolioData.placeholders[type] || 'Link not available at the moment. Will update shortly.'}
             onClick={(event) => {
               if (!isAvailable) event.preventDefault();
             }}

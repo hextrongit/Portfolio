@@ -43,16 +43,12 @@
   color: var(--text-strong);
 }
 
-.brand span {
-  display: grid;
+.avatar {
   width: 42px;
   height: 42px;
-  place-items: center;
-  border: 1px solid rgba(255, 255, 255, 0.16);
   border-radius: 8px;
-  background: linear-gradient(135deg, rgba(58, 224, 255, 0.28), rgba(255, 87, 219, 0.18));
-  color: var(--accent-cyan);
-  font-weight: 900;
+  object-fit: cover;
+  border: 1px solid rgba(154, 233, 255, 0.22);
 }
 
 .brand strong {

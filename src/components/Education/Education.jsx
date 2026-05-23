@@ -9,7 +9,8 @@ function Education() {
     <SectionShell
       id="education"
       eyebrow="Education"
-      title="Academic foundation with a product engineering path."
+      title="Academic foundation supporting analytical thinking and a transition into technology."
+      intro="Bachelor’s degree in Physics with a strong foundation in analytical thinking and problem solving, complemented by IT training through the ASAP program completed alongside the degree."
       className={styles.compactSection}
     >
       <div className={styles.grid}>

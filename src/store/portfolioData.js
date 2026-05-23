@@ -1,32 +1,34 @@
 import heroImage from '../assets/images/profile-hero.png';
 import connectImage from '../assets/images/profile-connect.png';
-import erp_image_1 from '../assets/erp_samples/ERP_image_1.png';
-import erp_image_2 from '../assets/erp_samples/ERP_image_2.png';
-import erp_image_3 from '../assets/erp_samples/ERP_image_3.png';
-import erp_image_4 from '../assets/erp_samples/ERP_image_4.png';
-import erp_image_5 from '../assets/erp_samples/ERP_image_5.png';
-import erp_image_6 from '../assets/erp_samples/ERP_image_6.png';
-import crm_image_1 from '../assets/crm_samples/CRM_image_1.png';
-import crm_image_2 from '../assets/crm_samples/CRM_image_2.png';
-import crm_image_3 from '../assets/crm_samples/CRM_image_3.png';
-import crm_image_4 from '../assets/crm_samples/CRM_image_4.png';
-import crm_image_5 from '../assets/crm_samples/CRM_image_5.png';
-import crm_image_6 from '../assets/crm_samples/CRM_image_6.png';
-import medico_plus_image_1 from '../assets/medicoplus_samples/MEDICOPLUS_image_1.jpeg';
-import medico_plus_image_2 from '../assets/medicoplus_samples/MEDICOPLUS_image_2.jpeg';
-import medico_plus_image_3 from '../assets/medicoplus_samples/MEDICOPLUS_image_3.jpeg';
-import medico_plus_image_4 from '../assets/medicoplus_samples/MEDICOPLUS_image_4.jpeg';
-import medico_plus_image_5 from '../assets/medicoplus_samples/MEDICOPLUS_image_5.jpeg';
-import movie_mate_image_1 from '../assets/movie_mate_samples/MOVIE_MATE_image_1.png';
-import movie_mate_image_2 from '../assets/movie_mate_samples/MOVIE_MATE_image_2.png';
-import movie_mate_image_3 from '../assets/movie_mate_samples/MOVIE_MATE_image_3.png';
-import movie_mate_image_4 from '../assets/movie_mate_samples/MOVIE_MATE_image_4.png';
-import movie_mate_image_5 from '../assets/movie_mate_samples/MOVIE_MATE_image_5.png';
-import chat_app_image_1 from '../assets/chat_app_samples/CHAT_APP_image_1.png';
-import chat_app_image_2 from '../assets/chat_app_samples/CHAT_APP_image_2.png';
-import chat_app_image_3 from '../assets/chat_app_samples/CHAT_APP_image_3.png';
-import chat_app_image_4 from '../assets/chat_app_samples/CHAT_APP_image_4.png';
-import hrm_image_1 from '../assets/hrm_samples/HRM_image_1.png';
+
+// Project images loaded dynamically to reduce bundle size
+const crm_image_1 = new URL('../assets/crm_samples/CRM_image_1.png', import.meta.url).href;
+const crm_image_2 = new URL('../assets/crm_samples/CRM_image_2.png', import.meta.url).href;
+const crm_image_3 = new URL('../assets/crm_samples/CRM_image_3.png', import.meta.url).href;
+const crm_image_4 = new URL('../assets/crm_samples/CRM_image_4.png', import.meta.url).href;
+const crm_image_5 = new URL('../assets/crm_samples/CRM_image_5.png', import.meta.url).href;
+const crm_image_6 = new URL('../assets/crm_samples/CRM_image_6.png', import.meta.url).href;
+const erp_image_1 = new URL('../assets/erp_samples/ERP_image_1.png', import.meta.url).href;
+const erp_image_2 = new URL('../assets/erp_samples/ERP_image_2.png', import.meta.url).href;
+const erp_image_3 = new URL('../assets/erp_samples/ERP_image_3.png', import.meta.url).href;
+const erp_image_4 = new URL('../assets/erp_samples/ERP_image_4.png', import.meta.url).href;
+const erp_image_5 = new URL('../assets/erp_samples/ERP_image_5.png', import.meta.url).href;
+const erp_image_6 = new URL('../assets/erp_samples/ERP_image_6.png', import.meta.url).href;
+const medico_plus_image_1 = new URL('../assets/medicoplus_samples/MEDICOPLUS_image_1.jpeg', import.meta.url).href;
+const medico_plus_image_2 = new URL('../assets/medicoplus_samples/MEDICOPLUS_image_2.jpeg', import.meta.url).href;
+const medico_plus_image_3 = new URL('../assets/medicoplus_samples/MEDICOPLUS_image_3.jpeg', import.meta.url).href;
+const medico_plus_image_4 = new URL('../assets/medicoplus_samples/MEDICOPLUS_image_4.jpeg', import.meta.url).href;
+const medico_plus_image_5 = new URL('../assets/medicoplus_samples/MEDICOPLUS_image_5.jpeg', import.meta.url).href;
+const movie_mate_image_1 = new URL('../assets/movie_mate_samples/MOVIE_MATE_image_1.png', import.meta.url).href;
+const movie_mate_image_2 = new URL('../assets/movie_mate_samples/MOVIE_MATE_image_2.png', import.meta.url).href;
+const movie_mate_image_3 = new URL('../assets/movie_mate_samples/MOVIE_MATE_image_3.png', import.meta.url).href;
+const movie_mate_image_4 = new URL('../assets/movie_mate_samples/MOVIE_MATE_image_4.png', import.meta.url).href;
+const movie_mate_image_5 = new URL('../assets/movie_mate_samples/MOVIE_MATE_image_5.png', import.meta.url).href;
+const chat_app_image_1 = new URL('../assets/chat_app_samples/CHAT_APP_image_1.png', import.meta.url).href;
+const chat_app_image_2 = new URL('../assets/chat_app_samples/CHAT_APP_image_2.png', import.meta.url).href;
+const chat_app_image_3 = new URL('../assets/chat_app_samples/CHAT_APP_image_3.png', import.meta.url).href;
+const chat_app_image_4 = new URL('../assets/chat_app_samples/CHAT_APP_image_4.png', import.meta.url).href;
+const hrm_image_1 = new URL('../assets/hrm_samples/HRM_image_1.png', import.meta.url).href;
 
 export const portfolioData = {
   name: 'Aswin Anilkumar',
@@ -195,7 +197,7 @@ export const portfolioData = {
       category: 'Full Stack',
       techStack: ['React (Vite)', 'Node.js', 'Express', 'Socket.io', 'JWT', 'MongoDB'],
       images: [chat_app_image_1, chat_app_image_2, chat_app_image_3, chat_app_image_4],
-      github: 'https://github.com/hextrongit/Chat-App-Frontend',
+      github: '',
       demo: '',
       featured: true,
       highlights: [

@@ -9,8 +9,8 @@ function Experience() {
     <SectionShell
       id="experience"
       eyebrow="Work"
-      title="Experience built across enterprise workflows and production product teams."
-      intro="A timeline of verified roles from the resume, with responsibilities and stack details preserved."
+      title="Experience built across enterprise systems and production environments."
+      intro="A journey through professional roles, highlighting responsibilities, technologies, and contributions across real-world projects."
     >
       <div className={styles.timeline}>
         {portfolioData.experienceItems.map((item, index) => (

@@ -15,7 +15,7 @@ function About() {
     <SectionShell
       id="about"
       eyebrow="Profile"
-      title="A full stack engineer shaping complex product systems into fast, maintainable experiences."
+      title="Building scalable applications with a focus on performance, maintainability, and user experience."
       intro={portfolioData.about[0]}
     >
       <div className={styles.grid}>

@@ -16,7 +16,7 @@
   --z-content: 2;
   --z-nav: 20;
   --z-floating: 25;
-  --z-modal: 40;
+  --z-modal: 9999;
   --z-cursor: 60;
   font-family:
     Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
