@@ -35,7 +35,6 @@
   height: 130px;
   margin: -65px 0 0 -65px;
   background: radial-gradient(circle, rgba(75, 218, 255, 0.16), transparent 60%);
-  transition: transform 0.08s linear;
 }
 
 @media (max-width: 1023px) {
