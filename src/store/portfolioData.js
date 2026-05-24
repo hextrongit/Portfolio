@@ -62,7 +62,7 @@ export const portfolioData = {
   skills: {
     Frontend: ['React.js', 'TypeScript', 'JavaScript (ES6+)', 'HTML', 'CSS', 'Redux', 'Zustand'],
     Backend: ['Node.js', 'Express.js', 'REST APIs', 'WebSockets', 'Webhook Integration'],
-    Database: ['MongoDB', 'Firebase', 'Firestore', 'PostgreSQL'],
+    Database: ['MongoDB', 'Mongoose', 'Firebase', 'Firestore'],
     Tools: ['Git', 'Bitbucket', 'JIRA', 'Postman', 'Swagger', 'CI/CD', 'VS Code', 'Cursor', 'Antigravity'],
     Technologies: ['JWT', 'RBAC', 'OAuth', 'bcrypt', 'SonarQube', 'OWASP ZAP', 'Burp Suite'],
   },
