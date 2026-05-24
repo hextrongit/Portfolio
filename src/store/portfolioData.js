@@ -39,7 +39,7 @@ export const portfolioData = {
   addressUrl: 'https://maps.app.goo.gl/ePevQghd9VWnmvX36',
   phone: '+91 7356450725',
   email: 'aswinanilkumar.hex@gmail.com',
-  resumeUrl: `${import.meta.env.BASE_URL}Aswin_Anilkumar_Resume_MERN.pdf`,
+  resumeUrl: `${import.meta.env.BASE_URL}Aswin_Anilkumar_MERN_Resume.pdf`,
   images: {
     hero: heroImage,
     connect: connectImage,
@@ -62,8 +62,9 @@ export const portfolioData = {
   skills: {
     Frontend: ['React.js', 'TypeScript', 'JavaScript (ES6+)', 'HTML', 'CSS', 'Redux', 'Zustand'],
     Backend: ['Node.js', 'Express.js', 'REST APIs', 'WebSockets', 'Webhook Integration'],
+    Database: ['MongoDB', 'Firebase', 'Firestore', 'PostgreSQL'],
     Tools: ['Git', 'Bitbucket', 'JIRA', 'Postman', 'Swagger', 'CI/CD', 'VS Code', 'Cursor', 'Antigravity'],
-    Technologies: ['MongoDB', 'Mongoose', 'JWT', 'RBAC', 'OAuth', 'bcrypt', 'SonarQube', 'OWASP ZAP', 'Burp Suite'],
+    Technologies: ['JWT', 'RBAC', 'OAuth', 'bcrypt', 'SonarQube', 'OWASP ZAP', 'Burp Suite'],
   },
   uiStyling: ['Tailwind CSS', 'Material UI', 'Chakra UI', 'Bootstrap', 'React Bootstrap', 'Responsive Design'],
   testing: ['Jest', 'React Testing Library'],
