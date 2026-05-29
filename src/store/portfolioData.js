@@ -29,6 +29,8 @@ const chat_app_image_2 = new URL('../assets/chat_app_samples/CHAT_APP_image_2.pn
 const chat_app_image_3 = new URL('../assets/chat_app_samples/CHAT_APP_image_3.png', import.meta.url).href;
 const chat_app_image_4 = new URL('../assets/chat_app_samples/CHAT_APP_image_4.png', import.meta.url).href;
 const hrm_image_1 = new URL('../assets/hrm_samples/HRM_image_1.png', import.meta.url).href;
+const exercise_helper_image_1 = new URL('../assets/exercise_helper_samples/EXERCISE_HELPER_image_1.png', import.meta.url).href;
+const exercise_helper_image_2 = new URL('../assets/exercise_helper_samples/EXERCISE_HELPER_image_2.png', import.meta.url).href;
 
 export const portfolioData = {
   name: 'Aswin Anilkumar',
@@ -190,6 +192,33 @@ export const portfolioData = {
       demo: '',
       featured: true,
       highlights: ['Implemented Redux-based cart management with lazy loading optimization.'],
+    },
+    {
+      id: 'exercise-helper',
+      title: 'Exercise Helper',
+      description:
+        'Responsive Progressive Web App (PWA) designed to assist users with workout tracking, interval training, voice-based repetition counting, and daily fitness monitoring.',
+      category: 'Fitness',
+      techStack: [
+        'React.js',
+        'Redux Toolkit',
+        'JavaScript',
+        'PWA',
+        'Web Speech API',
+        'CSS3'
+      ],
+      images: [
+        exercise_helper_image_1,
+        exercise_helper_image_2,
+      ],
+      github: '',
+      demo: '',
+      featured: true,
+      highlights: [
+        'Built a mobile-first responsive Progressive Web App for workout tracking and interval training.',
+        'Implemented voice-based repetition counting using the Web Speech API for hands-free workout sessions.',
+        'Created workout analytics, customizable settings, and local JSON export functionality for workout reports and history.'
+      ],
     },
     {
       id: 'real-time-chat',
