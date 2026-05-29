@@ -212,7 +212,7 @@ export const portfolioData = {
         exercise_helper_image_2,
       ],
       github: '',
-      demo: '',
+      demo: 'https://exercise-helper-ruby.vercel.app',
       featured: true,
       highlights: [
         'Built a mobile-first responsive Progressive Web App for workout tracking and interval training.',
