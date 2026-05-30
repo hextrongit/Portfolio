@@ -71,31 +71,9 @@
     transform 0.25s ease;
 }
 
-.icon::after {
-  position: absolute;
-  width: 5px;
-  height: 5px;
-  content: '';
-  border: 1px solid rgba(255, 255, 255, 0.54);
-  border-radius: 50%;
-  opacity: 0;
-  transition:
-    opacity 0.25s ease,
-    border-color 0.25s ease,
-    background 0.25s ease,
-    box-shadow 0.25s ease;
-}
-
 .indicator .active .icon {
   color: var(--accent-lime);
   filter: drop-shadow(0 0 9px rgba(185, 255, 97, 0.7));
-}
-
-.indicator .active .icon::after {
-  border-color: var(--accent-lime);
-  background: var(--accent-lime);
-  opacity: 1;
-  box-shadow: 0 0 16px rgba(185, 255, 97, 0.82);
 }
 
 .indicator strong {

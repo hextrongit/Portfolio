@@ -57,7 +57,7 @@
   border-radius: 50%;
   background: rgba(218, 249, 255, 0.74);
   box-shadow: 0 0 16px rgba(79, 225, 255, 0.8);
-  animation: drift 11s ease-in-out infinite;
+  animation: drift 7s ease-in-out infinite;
 }
 
 .scan {
