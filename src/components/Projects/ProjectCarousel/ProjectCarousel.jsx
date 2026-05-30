@@ -1,5 +1,5 @@
 import { useMemo, useState, useEffect, useRef, useCallback } from 'react';
-import { ArrowLeft, ArrowRight } from 'lucide-react';
+import { ArrowLeft, ArrowRight, Play, Pause } from 'lucide-react';
 import ProjectCard from '../ProjectCard/ProjectCard.jsx';
 import ProjectSkeleton from '../ProjectSkeleton/ProjectSkeleton.jsx';
 import styles from './ProjectCarousel.module.css';
@@ -8,6 +8,7 @@ const projectsPerSlide = 2;
 
 function ProjectCarousel({ projects, onSelectProject }) {
   const [index, setIndex] = useState(0);
+  const [isAutoPlayDisabled, setIsAutoPlayDisabled] = useState(true);
   const timerRef = useRef(null);
 
   const visibleProjects = useMemo(() => {
@@ -46,8 +47,10 @@ function ProjectCarousel({ projects, onSelectProject }) {
     if (timerRef.current) {
       clearInterval(timerRef.current);
     }
-    timerRef.current = setInterval(next, 4000);
-  }, [next]);
+    if (!isAutoPlayDisabled) {
+      timerRef.current = setInterval(next, 4000);
+    }
+  }, [next, isAutoPlayDisabled]);
 
   useEffect(() => {
     resetTimer();
@@ -77,6 +80,18 @@ function ProjectCarousel({ projects, onSelectProject }) {
         <span>
           {currentSlide} / {totalSlides}
         </span>
+        <button 
+          type="button" 
+          onClick={() => setIsAutoPlayDisabled((prev) => !prev)}
+          aria-label={isAutoPlayDisabled ? 'Start auto-slide' : 'Pause auto-slide'}
+          title={isAutoPlayDisabled ? 'Start auto-slide' : 'Pause auto-slide'}
+        >
+          {isAutoPlayDisabled ? (
+            <Play size={18} aria-hidden="true" />
+          ) : (
+            <Pause size={18} aria-hidden="true" />
+          )}
+        </button>
         <button type="button" onClick={handleNext} aria-label="Next project">
           <ArrowRight size={18} aria-hidden="true" />
         </button>
