@@ -55,7 +55,7 @@ export const portfolioData = {
     instagram: 'https://www.instagram.com/aswin_vrs/',
     facebook: 'https://www.facebook.com/share/18tyGG9dhj/',
   },
-  roleSwitch: ['Frontend Developer', 'React Developer', 'UI Engineer'],
+  roleSwitch: ['Software Engineer', 'Full Stack Developer', 'MERN Stack Developer', 'Frontend Developer', 'React Developer', 'UI Engineer', 'Web Developer'],
   about: [
     'Software Engineer with 3+ years of full stack experience building scalable web applications across CRM, ERP, HRM, and Healthcare domains.',
     'Proficient in the MERN stack with hands-on exposure to Laravel and .NET backend ecosystems. Skilled in modular frontend architecture, RESTful API development, and delivering production-grade platforms.',
