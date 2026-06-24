@@ -52,7 +52,7 @@ function Hero() {
 
         <motion.p initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.45 }}>
           I build scalable, maintainable web systems across CRM, ERP, HRM, and Healthcare workflows with React,
-          Node.js, Express.js, MongoDB, and production-minded frontend architecture.
+          Node.js, Express.js, MongoDB, MySQL and production-minded frontend architecture.
         </motion.p>
 
         <motion.div

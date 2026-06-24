@@ -6,7 +6,7 @@ import styles from './About.module.css';
 
 const focusItems = [
   { icon: Code2, title: 'Modular Frontend', text: 'Reusable React architecture, state strategy, and consistent component standards.' },
-  { icon: Layers3, title: 'Full Stack Delivery', text: 'REST APIs, WebSockets, MongoDB, and integrations across Laravel and .NET services.' },
+  { icon: Layers3, title: 'Full Stack Delivery', text: 'REST APIs, WebSockets, MongoDB, MySQL and integrations across Laravel and .NET services.' },
   { icon: ShieldCheck, title: 'Production Quality', text: 'Code reviews, secure auth flows, testing awareness, and performance-focused rendering.' },
 ];
 

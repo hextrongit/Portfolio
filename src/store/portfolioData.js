@@ -62,11 +62,62 @@ export const portfolioData = {
     'Focused on building performant, maintainable, and scalable web systems.',
   ],
   skills: {
-    Frontend: ['React.js', 'TypeScript', 'JavaScript (ES6+)', 'HTML', 'CSS', 'Redux', 'Zustand'],
-    Backend: ['Node.js', 'Express.js', 'REST APIs', 'WebSockets', 'Webhook Integration'],
-    Database: ['MongoDB', 'Mongoose', 'Firebase', 'Firestore'],
-    Tools: ['Git', 'Bitbucket', 'JIRA', 'Postman', 'Swagger', 'CI/CD', 'VS Code', 'Cursor', 'Claude AI', 'Docker', 'Redis', 'NGINX'],
-    Technologies: ['JWT', 'RBAC', 'OAuth', 'bcrypt', 'SonarQube', 'OWASP ZAP', 'Burp Suite'],
+    Frontend: [
+      'React.js',
+      'TypeScript',
+      'JavaScript (ES6+)',
+      'HTML5',
+      'CSS3',
+      'Redux',
+      'Zustand'
+    ],
+    Styling: [
+      'Tailwind CSS',
+      'Material UI',
+      'Chakra UI',
+      'Bootstrap',
+      'Responsive Design'
+    ],
+    Backend: [
+      'Node.js',
+      'Express.js',
+      'REST APIs',
+      'WebSockets',
+      'Socket.io',
+      'Webhook Integration'
+    ],
+    Database: [
+      'MongoDB',
+      'MySQL',
+      'Mongoose',
+      'Prisma',
+      'Redis'
+    ],
+    Security: [
+      'JWT',
+      'RBAC',
+      'OAuth',
+      'bcrypt'
+    ],
+    DevOps: [
+      'Docker',
+      'Git',
+      'Github Actions',
+      'Bitbucket',
+      'CI/CD'
+    ],
+    Tools: [
+      'JIRA',
+      'Postman',
+      'Swagger',
+      'VS Code',
+      'Cursor'
+    ],
+    Testing: [
+      'Jest',
+      'React Testing Library',
+      'SonarQube'
+    ]
   },
   uiStyling: ['Tailwind CSS', 'Material UI', 'Chakra UI', 'Bootstrap', 'React Bootstrap', 'Responsive Design'],
   testing: ['Jest', 'React Testing Library'],
@@ -85,9 +136,9 @@ export const portfolioData = {
         'Laravel',
         'Inertia.js',
         '.NET',
+        'MySQL',
         'Docker',
-        'Redis',
-        'NGINX'
+        'Redis'
       ],
       responsibilities: [
         'Contributed to frontend architecture and development of scalable CRM, ERP, and HRM platforms by introducing reusable component patterns and reducing duplicate logic.',
@@ -96,7 +147,7 @@ export const portfolioData = {
         'Improved development efficiency by standardizing shared component patterns across multiple modules.',
         'Optimized component rendering and state updates to improve application responsiveness and user experience.',
         'Led pull request reviews and promoted frontend code quality standards within a Laravel and Inertia.js ecosystem.',
-        'Worked within a containerized enterprise environment leveraging Docker, Redis, and NGINX as part of the application infrastructure.',
+        'Worked within a containerized enterprise environment leveraging Docker and Redis as part of the application infrastructure.',
       ],
     },
     {
@@ -135,12 +186,11 @@ export const portfolioData = {
         'React.js',
         'TypeScript',
         'Redux',
-        'Laravel',
-        'Inertia.js',
+        'MySQL',
+        'Prisma',
         'REST APIs',
         'Docker',
-        'Redis',
-        'NGINX'
+        'Redis'
       ],
       images: [crm_image_1, crm_image_2, crm_image_3, crm_image_4, crm_image_5, crm_image_6],
       github: '',
@@ -150,7 +200,7 @@ export const portfolioData = {
         'Architected reusable UI patterns for forms, tables, filters, modals, and workflow-driven components.',
         'Implemented structured state management for user context, permissions, and cross-module business workflows.',
         'Collaborated with backend and product teams to integrate complex business processes through REST APIs.',
-        'Worked within a Dockerized enterprise environment utilizing Redis and NGINX as part of the application infrastructure.',
+        'Worked within a Dockerized enterprise environment utilizing Redis as part of the application infrastructure.',
       ],
     },
     {
@@ -164,10 +214,10 @@ export const portfolioData = {
         'TypeScript',
         'Redux',
         'Laravel',
+        'MySQL',
         'REST APIs',
         'Docker',
-        'Redis',
-        'NGINX'
+        'Redis'
       ],
       images: [erp_image_1, erp_image_2, erp_image_3, erp_image_4, erp_image_5, erp_image_6],
       github: '',
@@ -178,7 +228,7 @@ export const portfolioData = {
         'Integrated ERP processes with backend services through structured API communication patterns.',
         'Standardized reusable component patterns to improve consistency across modules.',
         'Participated in frontend architecture decisions involving state management and component design standards.',
-        'Contributed to applications deployed in a Dockerized environment leveraging Redis and NGINX.',
+        'Contributed to applications deployed in a Dockerized environment leveraging Redis.',
       ],
     },
     {
@@ -189,6 +239,7 @@ export const portfolioData = {
       category: 'Healthcare',
       techStack: [
         'React.js',
+        'JavaScript',
         '.NET (C#)',
         'REST APIs',
         'Redux'
@@ -208,12 +259,17 @@ export const portfolioData = {
       title: 'Movie Mate - Ticket Booking Platform for Ceniplex',
       description: 'Ticket booking platform with user and admin modules, secure Stripe payment integration, and webhook-based validation.',
       category: 'Full Stack',
-      techStack: ['React', 'Node.js', 'Express', 'MongoDB', 'Stripe', 'Redux'],
+      techStack: ['React', 'JavaScript', 'Node.js', 'Express', 'MongoDB', 'Stripe', 'Redux'],
       images: [movie_mate_image_1, movie_mate_image_2, movie_mate_image_3, movie_mate_image_4, movie_mate_image_5],
       github: '',
       demo: '',
       featured: true,
-      highlights: ['Implemented Redux-based cart management with lazy loading optimization.'],
+      highlights: [
+        'Implemented Redux-based cart management with lazy loading optimization.',
+        'Utilized Stripe API for secure payment integration.',
+        'Implemented webhook-based validation for secure data transmission.',
+        'Optimized rendering logic and state management for improved responsiveness.',
+      ],
     },
     {
       id: 'exercise-helper',
@@ -223,6 +279,7 @@ export const portfolioData = {
       category: 'Fitness',
       techStack: [
         'React.js',
+        'Redux',
         'Redux Toolkit',
         'JavaScript',
         'PWA',
@@ -270,8 +327,7 @@ export const portfolioData = {
         'Laravel',
         'REST APIs',
         'Docker',
-        'Redis',
-        'NGINX'
+        'Redis'
       ],
       images: [hrm_image_1],
       github: '',
@@ -282,7 +338,7 @@ export const portfolioData = {
         'Implemented role-based workflows and structured state management across HR modules.',
         'Collaborated with backend teams to integrate business processes through REST APIs.',
         'Maintained consistent component architecture and shared UI standards across modules.',
-        'Worked within a Dockerized deployment ecosystem utilizing Redis and NGINX infrastructure.',
+        'Worked within a Dockerized deployment ecosystem utilizing Redis infrastructure.',
       ],
     }
   ],
