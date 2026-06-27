@@ -141,13 +141,15 @@ export const portfolioData = {
         'Redis'
       ],
       responsibilities: [
-        'Contributed to frontend architecture and development of scalable CRM, ERP, and HRM platforms by introducing reusable component patterns and reducing duplicate logic.',
-        'Participated in architectural decisions involving state management strategy, component design standards, and API integration patterns.',
-        'Collaborated with backend teams working on Laravel and .NET services to integrate business workflows through REST APIs.',
+        'Contributed to frontend architecture and led full stack implementation of scalable enterprise platforms — CRM (Node.js, Express.js, Prisma, MySQL), ERP (Laravel, PHP, MySQL), and HRM (Laravel, PHP, MySQL) — establishing reusable component patterns that significantly reduced duplication.',
+        'Architected a comprehensive reusable UI component library — forms, data tables, advanced filters, modals, and workflow-driven interface elements — enabling consistent user experiences across all enterprise modules.',
+        'Built and consumed RESTful APIs using Node.js and Express.js for the CRM platform, collaborating closely with backend teams on data contracts, business logic, and integration patterns.',
+        'Implemented structured Redux state management for user context, role-based permissions, and complex cross-module business workflows, ensuring predictable data flow across large-scale applications.',
         'Improved development efficiency by standardizing shared component patterns across multiple modules.',
         'Optimized component rendering and state updates to improve application responsiveness and user experience.',
-        'Led pull request reviews and promoted frontend code quality standards within a Laravel and Inertia.js ecosystem.',
-        'Worked within a containerized enterprise environment leveraging Docker and Redis as part of the application infrastructure.',
+        'Worked within a containerized development and deployment environment utilizing Redis as part of the application infrastructure stack.',
+        'Led pull request reviews and enforced code quality standards for a team of 5+ developers in a Laravel & Inertia.js ecosystem, mentoring junior developers on architectural best practices.',
+        'Partnered with backend and product teams to review API contracts, data schemas, and business logic, ensuring seamless full stack integration.'
       ],
     },
     {
@@ -160,7 +162,7 @@ export const portfolioData = {
         'Worked on full stack development for Medicoplus Hospital Management System covering patient management, billing, and consultation workflows.',
         'Built and integrated REST APIs using Node.js and Express.js for patient records, billing, and insurance modules.',
         'Collaborated with .NET backend services, integrating APIs into React-based frontend modules.',
-        'Improved application responsiveness by optimizing rendering logic, state management, and API data flow.',
+        'Improved application responsiveness by optimizing rendering logic, state management, and API data flow.'
       ],
     },
     {
@@ -172,6 +174,7 @@ export const portfolioData = {
       responsibilities: [
         'Developed full-stack web applications using the MongoDB, Express.js, React.js, and Node.js stack.',
         'Built reusable frontend components and integrated secure REST APIs with JWT authentication.',
+        'Participated in agile development workflows, collaborating with senior developers to deliver features within sprint timelines.'
       ],
     },
   ],
@@ -199,7 +202,8 @@ export const portfolioData = {
       highlights: [
         'Architected reusable UI patterns for forms, tables, filters, modals, and workflow-driven components.',
         'Implemented structured state management for user context, permissions, and cross-module business workflows.',
-        'Collaborated with backend and product teams to integrate complex business processes through REST APIs.',
+        'Architected a reusable UI component library covering forms, data tables, filters, modals, and workflow-driven components used consistently across all CRM modules.',
+        'Built and integrated backend APIs via Node.js and Express.js, collaborating with backend teams on business logic and data contracts in a Dockerized environment.',
         'Worked within a Dockerized enterprise environment utilizing Redis as part of the application infrastructure.',
       ],
     },
